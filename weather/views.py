@@ -21,7 +21,6 @@ from django.urls import reverse_lazy
 def index(request):
     url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid=95884f62299ee675da8b659b8c37d21d'
     cities = City.objects.all()
-    print(cities)
 
 
     if request.method == 'POST':
